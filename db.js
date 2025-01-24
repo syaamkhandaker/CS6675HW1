@@ -25,7 +25,6 @@ import { DB_NAME, COLLECTION_NAME } from './utils/constants.js';
     const db = client.db(DB_NAME);
     const collection = db.collection(COLLECTION_NAME);
     await collection.insertOne(data);
-    await client.close();
 }
 
 
