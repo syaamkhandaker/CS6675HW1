@@ -1,0 +1,22 @@
+{
+  "name": "cs6675hw1",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "CS6675HW1"
+  },
+  "type": "module",
+  "author": "syaamkhandaker",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "compromise": "^14.14.4",
+    "crawler": "^2.0.2",
+    "mongodb": "^6.12.0"
+  }
+}
