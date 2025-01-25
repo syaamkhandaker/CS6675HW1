@@ -3,6 +3,19 @@ I implemented my web crawler by using the Crawler NPM module and Cheerio to pars
 
 ## Web Archive:
 
+The database store is separated into five parts: URL, Title, Content, Timestamp, timeTaken.
+
+````
+URL - the url of the website accessed
+Title - the title of the website accessed
+Content - The relevant content within the page
+Timestamp - The Epoch time of access
+Time Taken - How long it took to retrieve content for that page after enqueuing it
+````
+
+An example of what would be stored in MongoDB is the following: 
+![Example Mongo Store](https://github.com/user-attachments/assets/c527318e-1743-4252-a6fb-f215d0c5cd14)
+
 ## How to run: 
 You can run the following code by simply running the command 'node server.js'. Once you run the command, the MongoDB store will populate with entries until the threshold of 1000 is met. Once there are 1000 entries in the database, a resulting output will show key metrics for how long the operation took, the crawl speed, etc.
 
