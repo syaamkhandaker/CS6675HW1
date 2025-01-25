@@ -15,8 +15,8 @@ The database store is separated into five parts: URL, Title, Content, Timestamp,
 URL - the url of the website accessed
 Title - the title of the website accessed
 Content - The relevant content within the page
-Timestamp - The Epoch time of access
-Time Taken - How long it took to retrieve content for that page after enqueuing it
+Timestamp (ms) - The epoch time of access
+Time Taken (ms) - How long it took to retrieve content for that page after enqueuing it
 ````
 
 An example of what would be stored in MongoDB is the following: 
