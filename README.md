@@ -1,3 +1,7 @@
+# Problem Selection:
+
+I did Problem 1.2 of trying to build a web crawler of my own.
+
 ## Code Implementation:
 I implemented my web crawler by using the Crawler NPM module and Cheerio to parse through the HTML. The base URL used was 'https://catalog.gatech.edu'.
 
