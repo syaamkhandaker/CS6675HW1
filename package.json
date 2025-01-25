@@ -15,8 +15,8 @@
   "description": "",
   "dependencies": {
     "cheerio": "^1.0.0",
-    "compromise": "^14.14.4",
     "crawler": "^2.0.2",
-    "mongodb": "^6.12.0"
+    "mongodb": "^6.12.0",
+    "nodeplotlib": "^1.1.2"
   }
 }
