@@ -1,5 +1,7 @@
 ## Code Implementation:
-I implemented my web crawler by using the Crawler NPM module and Cheerio to parse through the HTML. By parsing through the HTML, I associated all of the paragraph HTML elements as keywords that were extracted. The base URL used was 'https://catalog.gatech.edu'.
+I implemented my web crawler by using the Crawler NPM module and Cheerio to parse through the HTML. The base URL used was 'https://catalog.gatech.edu'.
+
+The way my code worked was it started at the base url and did a BFS graph traversal of all href links within the parent page. There was a visited set in order to ensure duplicate links weren't traversed multiple times. The traversal also ensured that it would move only amongst the base url ('catalog.gatech.edu'). Within each link, I used cheerio to retrieve all relevant content and the title of the page. The content was associated with all the paragraph tag text within the HTML page and the title was the title tag within the page. This content and title was added as part of my MongoDB index store. 
 
 ## Web Archive:
 
@@ -43,3 +45,6 @@ I really enjoyed the experience of making my own web crawler mainly because this
 To run 10 million pages it would take approximately 10,000 * 46.3 or 463,000 seconds or 128.6 hours or 5.4 days
 
 To run 1 billion pages it would take approximately 1,000,000 * 46.3 or 46,300,000 seconds or 12861.1 hours or 535.9 days or 1.47 years
+
+## References: 
+https://github.com/syaamkhandaker/CS6675HW1
