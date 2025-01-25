@@ -1,4 +1,4 @@
-import * as cheerio from 'cheerio';
+import { BASE_DOMAIN } from './constants.js';
 
 export const findChildLinks = (url, $) => {
     const links = [];
@@ -6,13 +6,11 @@ export const findChildLinks = (url, $) => {
     // jquery to find links with valid href tags
     $('a').filter((i, el) => {
         const href = $(el).attr('href');
-        console.log(href)
         if (href && href.startsWith('/')) {
             const newLink = new URL(href, url).href
-            console.log(newLink)
             links.push(newLink)
         }
-        else if (href && href.includes('http') && href.includes('cc.gatech.edu')) {
+        else if (href && href.includes('http') && href.includes(BASE_DOMAIN)) {
             links.push(href);
         }
     });

@@ -1,6 +1,6 @@
 import fs from 'fs';
 import { MongoClient } from 'mongodb';
-import { DB_NAME, COLLECTION_NAME } from './utils/constants.js';
+import { DB_NAME, COLLECTION_NAME } from './constants.js';
 
 
  const connectDB = async (client) => {  
