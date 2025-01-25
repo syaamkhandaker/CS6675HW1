@@ -39,12 +39,17 @@ Crawl speed: 1296.0082944530845
 ## Discuss the design of your crawler: Pros and cons.
 
 ### Pros:
+- Multiple Connections: Using the Crawler dependency, there's options to introduce more maximum connections, allowing web crawling to happen much quicker. In my current setup, the number of maximum parallel connections is set to 20. However, being given the option to increase it as we want, allows us to make it extremely quick to crawl websites.
+- Database Scalability: Using MongoDB as our store, we can take advantage of their pre-existing solutions for scalability and holding tons of information.
 
 ### Cons:
+- Rate limiting issues: Accessing certain websites a lot of times may lead to rate limiting issues of not being able to return us content as swiftly. In addition, accessing a lot of websites and web crawling may deal to bans due to the high load on a entities website.
+- Single-threaded nature: By using NodeJS, we restrict ourselves to a single threaded environment. Due to this, we can't take advantage of multi-threading when crawling websites.
+- Website overhead: In scenarios where websites don't exist or if it requires retries, it increases the overhead of the crawling. Given a maximum timeout value of 5000ms, we'd need to wait 5ms before we're able to retry a request. This increases the total time it requires to web crawl.
 
 ## 4. Experience and Lessons Learned
 
-I really enjoyed the experience of making my own web crawler mainly because this is something I haven't done before. I've done similar things such as using Selenium to automate web processes, however, I've never gotten a chance to web crawl. Given my background is in a lot of full stack development, it was also super nice to get a change and do pure NodeJS development. Through this experience, I got a chance to gain more background on web crawling and even the fallthroughts of current systems. 
+I really enjoyed the experience of making my own web crawler mainly because this is something I haven't done before. I've done similar things such as using Selenium to automate web scraping, however, I've never gotten a chance to web crawl. Given my background is in a lot of full stack development, it was also super nice to get a change and do pure NodeJS development. I also had my first introduction into JQuery and how powerful it can be. 
 
 ## Predictions
 To run 10 million pages it would take approximately 10,000 * 46.3 or 463,000 seconds or 128.6 hours or 5.4 days
