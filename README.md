@@ -24,15 +24,15 @@ An example of what would be stored in MongoDB is the following:
 
 ## Crawl Statistics
 
-Number of Keywords vs Time:
+Number of Keywords vs Time (ms):
 
 ![KeywordsVsTime](https://github.com/user-attachments/assets/ce811d9a-84b0-490e-94ee-5ff4902f2163)
 
-Number of Extracted Links vs Time:
+Number of Extracted URLs vs Time (ms):
 
 ![ExtractedLinksVsTime](https://github.com/user-attachments/assets/94eed071-549e-4da0-8a64-ecec01b4c74c)
 
-Number of Crawled Links vs Time:
+Number of Crawled URLs vs Time (ms):
 
 ![CrawledLinksVsTime](https://github.com/user-attachments/assets/142827d5-197e-485d-8a49-06c155493975)
 
