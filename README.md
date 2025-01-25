@@ -60,6 +60,7 @@ Crawl speed: 190.10382837426374 URLs per minute
 - Rate limiting issues: Accessing certain websites a lot of times may lead to rate limiting issues of not being able to return us content as swiftly. In addition, accessing a lot of websites and web crawling may deal to bans due to the high load on a entities website.
 - Single-threaded nature: By using NodeJS, we restrict ourselves to a single threaded environment. Due to this, we can't take advantage of multi-threading when crawling websites.
 - Website overhead: In scenarios where websites don't exist or if it requires retries, it increases the overhead of the crawling. Given a maximum timeout value of 5000ms, we'd need to wait 5ms before we're able to retry a request. This increases the total time it requires to web crawl.
+- Content Issues: The content extraction is dependent on if paragraph tags and title tags are used within the HTML. For the websites that don't use these tags, extraction won't be possible.
 
 ## 4. Experience and Lessons Learned
 
