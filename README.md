@@ -54,7 +54,7 @@ Crawl speed: 190.10382837426374 URLs per minute
 
 ### Pros:
 - Multiple Connections: Using the Crawler dependency, there's options to introduce more maximum connections, allowing web crawling to happen much quicker. In my current setup, the number of maximum parallel connections is set to 1. However, being given the option to increase it as we want, allows us to make it extremely quick to crawl websites.
-- Database Scalability: Using MongoDB as our store, we can take advantage of their pre-existing solutions for scalability and holding tons of information.
+- Database Scalability: Using MongoDB as our store, we can take advantage of their pre-existing solutions for scalability and concurrency.
 
 ### Cons:
 - Rate limiting issues: Accessing certain websites a lot of times may lead to rate limiting issues of not being able to return us content as swiftly. In addition, accessing a lot of websites and web crawling may deal to bans due to the high load on a entities website.
