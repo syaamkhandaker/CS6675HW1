@@ -22,6 +22,10 @@ Time Taken - How long it took to retrieve content for that page after enqueuing 
 An example of what would be stored in MongoDB is the following: 
 ![Example Mongo Store](https://github.com/user-attachments/assets/c527318e-1743-4252-a6fb-f215d0c5cd14)
 
+## Crawl Statistics
+
+
+
 ## How to run: 
 You can run the following code by simply running the command 'node server.js'. Once you run the command, the MongoDB store will populate with entries until the threshold of 1000 is met. Once there are 1000 entries in the database, a resulting output will show key metrics for how long the operation took, the crawl speed, etc.
 
