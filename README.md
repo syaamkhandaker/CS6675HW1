@@ -24,7 +24,17 @@ An example of what would be stored in MongoDB is the following:
 
 ## Crawl Statistics
 
+Number of Keywords vs Time:
 
+![KeywordsVsTime](https://github.com/user-attachments/assets/ce811d9a-84b0-490e-94ee-5ff4902f2163)
+
+Number of Extracted Links vs Time:
+
+![ExtractedLinksVsTime](https://github.com/user-attachments/assets/94eed071-549e-4da0-8a64-ecec01b4c74c)
+
+Number of Crawled Links vs Time:
+
+![CrawledLinksVsTime](https://github.com/user-attachments/assets/142827d5-197e-485d-8a49-06c155493975)
 
 ## How to run: 
 You can run the following code by simply running the command 'node server.js'. Once you run the command, the MongoDB store will populate with entries until the threshold of 1000 is met. Once there are 1000 entries in the database, a resulting output will show key metrics for how long the operation took, the crawl speed, etc.
